@@ -1,4 +1,4 @@
-# WordCount using MapPreduce in Hadoop HDFS
+# WordCount uses MapReduce in Hadoop HDFS
 
 ## Overview
 
@@ -55,7 +55,7 @@
   * *hadoop fs -mkdir inputdir*
 * Step 2: Copy our local data to Hadoop HDFS directory
   * *hadoop fs -put inputdir/\* inputdir*
-* Step 3: Run MapPreduce job in Hadoop
+* Step 3: Run MapReduce job in Hadoop
   * *hadoop jar wc.jar WordCountPackage.Main inputdir outputdir*
-* Step 4: View MapPreduce result
+* Step 4: View MapReduce result
   * *hadoop fs -cat outputdir/part-00000*
