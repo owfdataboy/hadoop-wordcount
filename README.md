@@ -10,8 +10,8 @@
         <td>2.10.1</td>
     </tr>
     <tr>
-        <td>Java</td>
-        <td>1.8</td>
+        <td>Javac</td>
+        <td>1.8.0_312</td>
     </tr>
    </table>
    
