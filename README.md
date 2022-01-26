@@ -23,7 +23,9 @@
 * Step 2: Create compiled directory
   * *mkdir container*
 * Step 3: Compile project with Hadoop JARs
-  * *javac -cp ${HADOOP_CLASSPATH} -d container/ WordCount.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Map.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Reduce.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Main.java*
 * Step 4: Create project JAR file
   * *jar -cvf wc.jar -C container/ .*
   
@@ -34,6 +36,6 @@
 * Step 2: Copy our local data to Hadoop HDFS directory
   * *hadoop fs -put inputdir/\* inputdir*
 * Step 3: Run MapPreduce job in Hadoop
-  * *hadoop jar wc.jar WordCount inputdir outputdir*
+  * *hadoop jar wc.jar WordCountPackage.Main inputdir outputdir*
 * Step 4: View MapPreduce result
-  * *hadoop fs -cat outputdir/part-r-00000*
+  * *hadoop fs -cat outputdir/part-00000*
