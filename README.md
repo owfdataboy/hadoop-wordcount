@@ -15,6 +15,26 @@
     </tr>
    </table>
    
+   * Classes 
+    <table>
+    <tr>
+        <td>Class</td>
+        <td>Extends</td>
+    </tr>
+    <tr>
+        <td>Map</td>
+        <td>Mapper</td>
+    </tr>
+    <tr>
+        <td>Reduce</td>
+        <td>Reducer</td>
+    </tr>
+    <tr>
+        <td>Main</td>
+        <td>None</td>
+    </tr>
+   </table>
+   
 ## Build project
 
 * Step 1: Export Hadoop classpath
