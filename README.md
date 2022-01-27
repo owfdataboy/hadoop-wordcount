@@ -20,20 +20,26 @@
     <tr>
         <td>Class</td>
         <td>Extends</td>
+        <td>Implements</td>
     </tr>
     <tr>
         <td>Map</td>
+        <td>MapReduceBase</td>
         <td>Mapper</td>
     </tr>
     <tr>
         <td>Reduce</td>
+        <td>MapReduceBase</td>
         <td>Reducer</td>
     </tr>
     <tr>
         <td>Main</td>
         <td>None</td>
+        <td>None</td>
     </tr>
    </table>
+   
+   * 4300.txt is a input data file. The input is a long description of website project. We make use of this input for demonstrating MapReduce in Hadoop.
    
 ## Build project
 
@@ -44,7 +50,8 @@
   * *mkdir container*
 * Step 3: Compile project with Hadoop JARs
   * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Map.java*
-  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Reduce.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Combiner.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Reducer.java*
   * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Main.java*
 * Step 4: Create project JAR file
   * *jar -cvf wc.jar -C container/ .*
