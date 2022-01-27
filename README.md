@@ -27,6 +27,11 @@
         <td>MapReduceBase</td>
         <td>Mapper</td>
     </tr>
+   <tr>
+        <td>Combiner</td>
+        <td>MapReduceBase</td>
+        <td>Reducer</td>
+    </tr>
     <tr>
         <td>Reduce</td>
         <td>MapReduceBase</td>
