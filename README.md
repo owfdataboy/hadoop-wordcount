@@ -56,7 +56,7 @@
 * Step 3: Compile project with Hadoop JARs
   * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Map.java*
   * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Combiner.java*
-  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Reducer.java*
+  * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Reduce.java*
   * *javac -cp ${HADOOP_CLASSPATH}:container/:. -d container/ Main.java*
 * Step 4: Create project JAR file
   * *jar -cvf wc.jar -C container/ .*
@@ -71,3 +71,6 @@
   * *hadoop jar wc.jar WordCountPackage.Main inputdir outputdir*
 * Step 4: View MapReduce result
   * *hadoop fs -cat outputdir/part-00000*
+  
+## Demonstration
+<img src='result.png' alt='result in there'></img>
